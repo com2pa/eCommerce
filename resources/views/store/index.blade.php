@@ -14,8 +14,9 @@
                     {{-- mostrando precio  con dos decimales --}}
                     <p>Precio: ${{ number_format($product->prince,2)}}</p>
                     <p>
-                        <a class="produc-boton__link"href=""> La Quiero</a>
-                        <a class="produc-boton__link"href="">Leer Más</a>
+                        <a class="produc-boton__link"href="#"> La Quiero</a>
+                                                                {{-- funcion para general la url  --}}
+                        <a class="produc-boton__link"href="{{ route('product-detail',$product->slug)}}">Leer Más</a>
 
                     </p>
                 </div>

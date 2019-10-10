@@ -22,5 +22,9 @@
     Route::get('/', 'StoreController@index');
 
 
-
+    //para mostrar los detalles del productos (hasta horita solo atiende peticiones)
+    Route::get('product/{slug}',[
+        'as'   =>'product-detail',
+        'uses' =>'StoreController@Show'
+    ]);
 
