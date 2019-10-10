@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
 //--- MOSTRANDO JSON DE CATEGORIAS
 // return App\Category::all();
 //--- MOSTRANDO JSON DE Productos
-return App\Product::all();
+// return App\Product::all();
 
-});
+// });
 
-    // Route::get('home', 'StoreController@index');
+    Route::get('/', 'StoreController@index');
 
 
 

@@ -10,9 +10,8 @@ use App\Product;
 class StoreController extends Controller
 {
     public function index(){
-        $product = Product::all()->toJson();
-        dd($product);
-        return view ('store.index',compact('products'));
-
+        $products = Product::all();
+        // dd($product);
+        return view ('store.index', compact('products'));
     }
 }
