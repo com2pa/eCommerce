@@ -19,8 +19,11 @@
 
 // });
 
-    Route::get('/', 'StoreController@index');
-
+    // Route::get('/', 'StoreController@index');
+    Route::get('/',[
+        'as'    =>'home',
+        'uses'  =>'StoreController@index'
+    ]);
 
     //para mostrar los detalles del productos (hasta horita solo atiende peticiones)
     Route::get('product/{slug}',[

@@ -1,4 +1,5 @@
 @extends('store.template')
+@section('title','Products')
 @section('content')
 
     <section class="main-Product">
